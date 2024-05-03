@@ -8,16 +8,22 @@ calculateButton.addEventListener('click', function() {
     if(num > 100 || num < 0) {
         result.innerText = "Invalid Marks";
     }
-    else if(num >=79 && num <=100) {
+    else if(num >=80 && num <=100) {
         result.innerText = "A+";
     }
-    else if(num >=69 && num < 80) {
+    else if(num >=70 && num <= 79) {
+        result.innerText = "A";
+    }
+    else if(num >=60 && num <= 69) {
+        result.innerText = "A-";
+    }
+    else if(num >=50 && num <= 59) {
         result.innerText = "B";
     }
-    else if(num >=59 && num < 70) {
+    else if(num >=40 && num <= 49) {
         result.innerText = "C";
     }
-    else if(num >=49 && num < 60) {
+    else if(num >=33 && num <= 39) {
         result.innerText = "D";
     }
     else {

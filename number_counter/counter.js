@@ -1,21 +1,21 @@
-let cnt = 0;
+let count = 0;
 
 counter = document.getElementById('counter');
 
 function inc(){
-    if(cnt<10)
-        cnt++;
+    if(count<10)
+        count++;
     else 
         alert("Count can't be more than 10");
-    counter.innerText = cnt;
+    counter.innerText = count;
 }
 
 function dec(){
-    if(cnt>0)
-        cnt--;
+    if(count>0)
+        count--;
     else 
         alert("Count can't be negative");
-    counter.innerText = cnt;
+    counter.innerText = count;
 }
 
 function getIncButtonElement() {
@@ -28,9 +28,7 @@ function getDecButtonElement() {
     return button;
 }
 
-
-
 getIncButtonElement().addEventListener('click', inc);
 getDecButtonElement().addEventListener('click', dec);
 
-console.log(cnt);
+console.log(count);
